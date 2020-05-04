@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 img {
-    width: 150px;
-    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 0 30px #444;
     float: right;
+    border-radius: 0 10px 0 0;
     margin-top: -80px;
-    margin-right: 10px;
+    margin-right: 12px;
     position: relative;
+}
+
+h1,
+h2 {
+    font-family: 'Permanent Marker', cursive;
 }
 
 h1,
@@ -14,6 +23,11 @@ footer {
     color: white;
     text-align: center;
     padding: 17px;
+}
+
+hr {
+    width: 75%;
+    margin-left: 0;
 }
 
 body {
