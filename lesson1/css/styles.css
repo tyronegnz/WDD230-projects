@@ -52,4 +52,13 @@ main {
 footer {
     grid-column: 2 / 4;
     grid-row: 3;
+    font-size: 14px;
 }
+
+.grid a:hover {
+    color: gray;
+}
+
+footer a:visited {
+    color: white;
+} 
