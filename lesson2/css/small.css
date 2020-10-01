@@ -1,3 +1,70 @@
-@media only screen and (max-width: 500px) {
-    
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+h1,
+h2,
+h3 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h3 {
+    color: ghostwhite;
+    background-color: black;
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    background-color: #2B3D41;
+    color: ghostwhite;
+    text-align: center;
+    padding: 1px;
+}
+
+img {
+    max-width: 100%;
+    width: 300px;
+}
+
+
+main {
+    max-width: 100%;
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+    font-family: sans-serif;
+}
+
+.home-headline1 {
+    border: solid;
+    border-radius: 2px;
+    padding: 0 1rem;
+}
+
+.home-headline2 {
+    border: solid;
+    border-radius: 2px;
+    padding: 0 1rem;
+}
+
+.home-headline3 {
+    border: solid;
+    border-radius: 2px;
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: #2B3D41;
+    color: ghostwhite;
+    margin-top: 50px;
+    text-align: center;
+    padding: 1px;
+}
+
+a:hover,
+a:visited {
+    color: gray;
+    background-color: #2B3D41;
 }
