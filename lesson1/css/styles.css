@@ -1,64 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-img {
-    width: 200px;
-    height: auto;
-    box-shadow: 0 0 30px #444;
-    float: right;
-    border-radius: 0 10px 0 0;
-    margin-top: -80px;
-    margin-right: 12px;
-    position: relative;
+@media  only screen and  (min-width: 32.5em) {
+        
 }
 
-h1,
-h2 {
-    font-family: 'Permanent Marker', cursive;
+@media  only screen and  (min-width: 64em) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    header {
+        grid-column: 2 / 4;
+    }
+    
+    main {
+        max-width: 100%;
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+    
+    footer {
+        grid-column: 2 / 4;
+        grid-row: 3;
 }
-
-h1,
-footer {
-    background-color: #2B3D41;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    padding: 17px;
-}
-
-hr {
-    width: 75%;
-    margin-left: 0;
-}
-
-body {
-    font-family: sans-serif;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-header {
-    grid-column: 2 / 4;
-}
-
-main {
-    grid-column: 2 / 4;
-    grid-row: 2;
-    margin-top: -125px;
-}
-
-footer {
-    grid-column: 2 / 4;
-    grid-row: 3;
-    font-size: 14px;
-}
-
-.grid a:hover {
-    color: gray;
-}
-
-footer a:visited {
-    color: white;
-} 
