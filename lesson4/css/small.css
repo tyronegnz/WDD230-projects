@@ -84,7 +84,7 @@ nav {
 .content-box {
     display: block;
     padding: 15px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     font-family: var(--paragraph-font);
     border: 1px groove black;
 }
