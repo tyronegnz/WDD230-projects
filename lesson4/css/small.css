@@ -27,6 +27,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--headline-color-on-color);
+    margin-bottom: -17px;
 }
 
 img {
@@ -43,81 +44,106 @@ h2 {
     text-align: center;
 }
 
-.navigation {
-    display: block;
-    height: 40px;
-    width: 100%;
-    background: url(/lesson4/images/hamburgerIcon.png) no-repeat 96%;
-    background-color: var(--primary-color);
-    cursor: pointer;
-    padding-top: 10px;
-
-    /*font-family: var(--paragraph-font);
-    background-color: var(--nav-background-color);
-    display: block;
-    margin: 0;
-    text-align: center;*/
-}
-
-nav ul {
-    overflow: hidden;
-    list-style-type: none;
-    margin: 0;
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #404040;
     font-family: var(--paragraph-font);
-    background: #404040;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navigation {
+    list-style: none;
     padding: 0;
-    height: 0;
 }
 
-nav ul.open {
-    height: auto;
-}
-
-nav ul li {
-    float: none;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    border-bottom: 1px solid white;
+.navigation li:first-child {
     display: block;
-    padding-bottom: 10px;
-    padding-top: 10px;
 }
 
-a {
-    text-decoration: none;
+.navigation li {
+    display: none;
+    border-bottom: 1px groove white;
 }
 
-nav a {
+
+.navigation a {
+    display: block;
     text-align: center;
-}
-
-a:link,
-a:visited {
-    color: var(--nav-link-color);
-}
-
-
-a:hover {
+    text-decoration: none;
     color: white;
+    padding: 10px;
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: gray;
 }
 
 .content-box {
     display: block;
-    border: 1px groove black;
     padding: 15px;
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
+    border: 1px groove black;
 }
 
 footer {
     margin-top: 15px;
-    color: var(--paragraph-color-on-color);
-    background-color: var(--footer-background-color);
+    color: white;
+    background-color: #404040;
     font-family: var(--paragraph-font);
     padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: gray;
 }
 
 .responsive li {
-	display: block;
+    display: block;
+}
+
+
+
+
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .content-box {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    footer {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
