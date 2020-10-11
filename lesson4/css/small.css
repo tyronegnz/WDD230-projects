@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Arvo');
+
+:root {
+    --primary-color: #F4BF91;
+    --secondary-color: #FFE8C2;
+    --accent1-color: #E4FFE1;
+    --accent2-color: white;
+
+    --heading-font: "Mansalva";
+    --paragraph-font: "Arvo";
+
+    --headline-color-on-white: black;
+    --headline-color-on-color: #E4FFE1;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: #E4FFE1;
+    --text-background-color: black;
+    --nav-link-color: #E4FFE1;
+    --nav-background-color: black;
+    --nav-hover-link-color: #838C78;
+    --nav-hover-background-color: black;
+    --footer-background-color: black;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--headline-color-on-color);
+}
+
+img {
+    width: 140px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    text-align: center;
+}
+
+.navigation {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url(/lesson4/images/hamburgerIcon.png) no-repeat 96%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    padding-top: 10px;
+
+    /*font-family: var(--paragraph-font);
+    background-color: var(--nav-background-color);
+    display: block;
+    margin: 0;
+    text-align: center;*/
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    font-family: var(--paragraph-font);
+    background: #404040;
+    padding: 0;
+    height: 0;
+}
+
+nav ul.open {
+    height: auto;
+}
+
+nav ul li {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid white;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    text-align: center;
+}
+
+a:link,
+a:visited {
+    color: var(--nav-link-color);
+}
+
+
+a:hover {
+    color: white;
+}
+
+.content-box {
+    display: block;
+    border: 1px groove black;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+footer {
+    margin-top: 15px;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--footer-background-color);
+    font-family: var(--paragraph-font);
+    padding: 10px;
+}
+
+.responsive li {
+	display: block;
+}

@@ -113,7 +113,7 @@ nav {
 nav>ul {
   list-style-type: none;
   display: flex;
-
+  padding: 0;
 }
 
 nav a {
@@ -133,7 +133,7 @@ nav a:hover {
 
 a:link,
 a:visited {
-  color: #F4BF91;
+  color:var(--primary-color);
 }
 
 .sitemap {
