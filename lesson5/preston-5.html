@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 Weather Site</title>
+    <meta name="description" content="Weather Site WDD 230: Web Fronted Development">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="/lesson5/css/small.css">
+    <link rel="icon" href="/lesson5/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="icon" src="/lesson5/images/weatherIcon.png">
+        <h1>Worldwide Weather</h1>
+        <!--<h3>Accurate weather 24/7</h3>-->
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="main-div">
+            <img class="main-image" src="/lesson5/images/city.jpg" alt="City Image">
+            <section class="weather-summary">
+                <h2>Weather Summary</h2>
+                <hr>
+                <p>Currently: Sunny</p>
+                <p>High: 76 F &deg;</p>
+                <p>Humidity: 69%</p>
+                <p>Precipitation: 0 inches</p>
+                <p>Wind Speed: 5 mph</p>
+
+                <!--<div class="content-box">Weather Summary</div>
+        <div class="content-box">5 Day Forecast</div>
+        <div class="content-box">Article</div>
+        <div class="content-box">Contact Information</div>-->
+            </section>
+        </div>
+        <div class="five-day-div">
+            <h2>5 Day Forecast</h2>
+            <section class="five-day-forecast">
+                <div class="day">
+                    <p class="weekday">Mon</p>
+                    <p class="temp">70&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Tues</p>
+                    <p class="temp">65&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Wed</p>
+                    <p class="temp">64&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Thurs</p>
+                    <p class="temp">58&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Fri</p>
+                    <p class="temp">45&deg;</p>
+                </div>
+            </section>
+        </div>
+
+        <h2>Article</h2>
+        <div class="article">
+        <img class="group-people" src="/lesson5/images/people.jpg" alt="Group of People">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam illo autem delectus officia nulla amet,
+            hic, aut at veritatis doloribus ipsa ab, dignissimos placeat fugit. Cupiditate delectus quo mollitia labore!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam illo autem delectus officia nulla amet,
+            hic, aut at veritatis doloribus ipsa ab, dignissimos placeat fugit. Cupiditate delectus quo mollitia labore!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam illo autem delectus officia nulla amet,
+            hic, aut at veritatis doloribus ipsa ab, dignissimos placeat fugit. Cupiditate delectus quo mollitia labore!
+        </p>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="footer-div"> 
+        <img class ="map-image" src="/lesson5/images/mapImage.jpg" alt="Image of location in a map">
+        
+        <div &copy;| 2020 | Tyrone Gonzalez | Rexburg, ID | <a href="https://www.byui.edu/online"> BYUI Online
+            Learning </a>|
+            ✉ worldwideweather.cxm
+            ☎ 000.000.0000</div>
+        </div>
+
+        <span id="output"></span>
+        <!--<script src="/lesson4/js/date.js"></script>-->
+        <script src="/lesson4/js/responsive-menu.js"></script>
+        
+    </footer>
+
+</body>
+
+</html>
