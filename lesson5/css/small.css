@@ -21,6 +21,13 @@
     --footer-background-color: black;
 }
 
+.top-banner {
+    display: block;
+    text-align: center;
+    background: lightyellow;
+    padding: 5px;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +54,10 @@ h3 {
 
 h2 {
     text-align: center;
+}
+
+.h2-5day {
+    margin-top: 100px;
 }
 
 nav {
@@ -89,7 +100,6 @@ nav {
 .main-image {
     max-width: 100%;
     box-shadow: 3px 3px 10px #88888879;
-    border: solid 7px white;
 }
 
 .main-div {
@@ -161,6 +171,7 @@ footer {
 .map-image {
     width: 300px;
 }
+
 .footer-div {
     display: block;
 }
@@ -262,7 +273,7 @@ footer a:hover {
         width: 200px;
         float: right;
     }
-    
+
     .map-image {
         opacity: .9;
         border: solid 1px white;

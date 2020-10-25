@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link type="text/css" rel="stylesheet" href="/lesson5/css/small.css">
     <link rel="icon" href="/lesson5/images/favicon.ico">
+    <script src="/lesson6/js/windchill.js"></script>
+    <script src="/lesson6/js/date.js"></script>
 </head>
 
 <body>
+    <div class="top-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
     <header>
         <img class="icon" src="/lesson5/images/weatherIcon.png">
         <h1>Worldwide Weather</h1>
@@ -32,15 +38,19 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="main-div">
-            <img class="main-image" src="/lesson5/images/city.jpg" alt="City Image">
+            <picture>
+                <source srcset="/lesson5/images/weather_medium.jpg" media="(min-width: 32.5em)">
+                <source srcset="/lesson5/images/weather_large.jpg" media="(min-width: 64em)">
+                <img class="main-image" src="/lesson5/images/weather_small.jpg" alt="City Image">
+            </picture>
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
                 <hr>
                 <p>Currently: Sunny</p>
                 <p>High: 76 F &deg;</p>
-                <p>Humidity: 69%</p>
+                <p>Humidity:<span id="wind-chill"></span> 69 &deg;</p>
                 <p>Precipitation: 0 inches</p>
-                <p>Wind Speed: 5 mph</p>
+                <p>Wind Speed:<span id="wind-speed">5</span>MPH</p>
 
                 <!--<div class="content-box">Weather Summary</div>
         <div class="content-box">5 Day Forecast</div>
@@ -49,7 +59,7 @@
             </section>
         </div>
         <div class="five-day-div">
-            <h2>5 Day Forecast</h2>
+            <h2 class="h2-5day">5 Day Forecast</h2>
             <section class="five-day-forecast">
                 <div class="day">
                     <p class="weekday">Mon</p>
@@ -96,12 +106,12 @@
     <footer>
         <div class="footer-div">
             <img class="map-image" src="/lesson5/images/mapImage.jpg" alt="Image of location in a map">
-            
+
             <div &copy;| 2020 | Tyrone Gonzalez | Rexburg, ID | <a href="https://www.byui.edu/online"> BYUI Online
                 Learning </a>
-                
+
                 <div>✉ worldwideweather.cxm
-                ☎ 000.000.0000
+                    ☎ 000.000.0000
 
                 </div>
             </div>
@@ -111,6 +121,7 @@
         <!--<script src="/lesson4/js/date.js"></script>-->
         <script src="/lesson4/js/responsive-menu.js"></script>
 
+        <script src="/lesson1/js/fontLoader.js"></script>
     </footer>
 
 </body>
