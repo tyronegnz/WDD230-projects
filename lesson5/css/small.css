@@ -159,12 +159,14 @@ nav {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 15px;
     color: white;
     background-color: #404040;
     font-family: var(--paragraph-font);
     padding: 10px;
-    text-align: center;
+    text-align: justify;
     font-style: italic;
 }
 
@@ -281,7 +283,6 @@ footer a:hover {
         margin-left: 25px;
         margin-right: 25px;
         text-align: justify;
-
     }
 
     .map-image {
