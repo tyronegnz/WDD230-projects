@@ -274,20 +274,28 @@ footer a:hover {
         float: right;
     }
 
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: justify;
+
+    }
+
     .map-image {
         opacity: .9;
         border: solid 1px white;
     }
 
-    footer {
-        margin-left: 25px;
-        margin-right: 25px;
+    .footer-image-div {
+        grid-column: 2 / 3;
     }
 
-    .footer-div {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: flex-end;
+    .footer-social-media {
+        grid-column: 3 / 4;
     }
-}
+
+
+    }
