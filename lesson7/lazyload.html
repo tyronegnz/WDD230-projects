@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Images</title>
+    <meta name="description" content="Lazy Load Images: Web Fronted Development">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="/lesson7/styles.css">
+    <script src="/lesson7/intersection.js"></script>
+</head>
+<body>
+    <main>
+        <div class="grid-container">
+        <h1>Progressive Loading Images</h1>
+
+        <picture>
+            <img src="/lesson7/images/photo-1554583670-75aeb49da5af_ixlib=rb-1.2.jpg">
+        </picture>
+
+        <picture>
+            <img src="/lesson7/images/photo-1559313093-a25257adcadd_ixlib=rb-1.2.jpg">
+        </picture>
+
+        <picture>
+            <img data-src="/lesson7/images/photo-1575639371597-460963b3196a_ixlib=rb-1.2.jpg">
+        </picture>
+
+        <picture>
+            <img data-src="/lesson7/images/photo-1601657903535-4fa6771ca82c_ixlib=rb-1.2.jpg">
+        </picture>
+
+        <picture>
+            <img data-src="/lesson7/images/photo-1602025614205-3a0bb92202ba_ixlib=rb-1.2.jpg">
+        </picture>
+        </div>
+    </main>
+</body>
+</html>
