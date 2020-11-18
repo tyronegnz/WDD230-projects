@@ -119,6 +119,9 @@ nav {
     border: 1px groove black;
 }*/
 
+img {
+    border-radius: 7px;
+}
 
 footer {
     margin-top: 15px;

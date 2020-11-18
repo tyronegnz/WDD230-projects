@@ -52,6 +52,10 @@
         box-shadow: 0 0 50px #333;
     }
 
+    img {
+        border-radius: 7px;
+    }
+
     .img-1 {
         grid-area: imagen1;
     }
