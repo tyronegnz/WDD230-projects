@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 Weather Site</title>
+    <meta name="description" content="Weather Site WDD 230: Web Fronted Development">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="/lesson7/css/small.css">
+    <link type="text/css" rel="stylesheet" href="/lesson7/css/medium.css">
+    <link type="text/css" rel="stylesheet" href="/lesson7/css/large.css">
+    <link rel="icon" href="/lesson5/images/favicon.ico">
+    <link rel="stylesheet" href="/lesson8/css/small.css">
+    <link rel="stylesheet" href="/lesson8/css/medium.css">
+    <link rel="stylesheet" href="/lesson8/css/large.css">
+</head>
+
+<body>
+    <div class="top-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
+    <header>
+        <img class="icon" src="/lesson5/images/weatherIcon.png">
+        <h1>Worldwide Weather</h1>
+        <!--<h3>Accurate weather 24/7</h3>-->
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <form method="GET" action="/lesson8/html/feedback.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" minlength="5" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">ZIP Code <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Report</legend>
+                <label class="top">Date <input type="date" name="completeDate"></label>
+                <label class="top">Type
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="a">Hurricane</option>
+                        <option value="b">Hail</option>
+                        <option value="c">Flash Flood</option>
+                        <option value="e">Tornado</option>
+                        <option value="f">Wildfire</option>
+                        <option value="g">Earthquake</option>
+                    </select>
+                </label>
+
+                <label class="top">Region
+                    <select>
+                        <option value="">Please Select &#9662;</option>
+                            <option value="h">Preston</option>
+                            <option value="i">Soda Springs</option>
+                            <option value="j">Fish Haven</option>
+                    </select>
+                </label>
+                <label class="sbs">
+                Severity (1 - 10): <input type="range" id="rating" value="5" min="1" max="10">
+            </fieldset>
+
+            <fieldset>
+                <legend>Are you in Danger?</legend>
+                <label class="sbs"><input type="radio" name="danger" value="beginner">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="intermediate">Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="advanced">No</label>
+            </fieldset>
+
+                <textarea name="comments" rows="8" cols="50" placeholder="Additional Information or Comments..."></textarea>
+
+            <input class="submitBtn" type="submit" value="Submit My Report">
+        </form>
+    </main>
+    <footer>
+        <section class="footer-image-div"><img class="map-image" src="/lesson5/images/mapImage.jpg"
+                alt="Image of location in a map"></s>
+        <section class="footer-social-media">
+            <a href="https://www.instagram.com/?hl=en">
+                <img src="/lesson5/images/ig.png" alt="Instagram Link"></a>
+            <a href="https://www.facebook.com/">
+                <img src="/lesson5/images/facebook.png" alt="Facebook Link"></a>
+
+            <p>✉ worldwideweather.com</p>
+            <p> ☎ 000.000.0000</p>
+            <p>&copy;| 2020 | Tyrone Gonzalez | Rexburg, ID |
+                <a href="https://www.byui.edu/online"> BYUI Learning</a></p>
+        </section>
+
+        <span id="output"></span>
+        <!--<script src="/lesson4/js/date.js"></script>-->
+        <script src="/lesson4/js/responsive-menu.js"></script>
+
+        <script src="/lesson1/js/fontLoader.js"></script>
+    </footer>
+
+</body>
+
+</html>
