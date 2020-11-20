@@ -1,0 +1,43 @@
+.cards{
+    display: grid;
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+h2{
+    color: black;
+}
+
+img{
+    width: 180px;
+    box-shadow: 10px 10px 10px; 
+}
+
+body {
+    background-color: tan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    text-align: center;
+    background: radial-gradient(white, #999);
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+@media only screen and (min-width: 32.5em) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 70.5em) {
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
