@@ -27,10 +27,15 @@ body {
 section{
     text-align: center;
     background: radial-gradient(white, #999);
-    border: black solid 1px;
+    border: black solid 2px;
     border-radius: 5px;
     padding: 10px;
 }
+
+section:hover {
+    background: radial-gradient( #999, white);;
+}
+
 @media only screen and (min-width: 32.5em) {
     .cards{
         grid-template-columns: 1fr 1fr;
