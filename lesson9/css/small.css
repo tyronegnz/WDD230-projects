@@ -1,0 +1,15 @@
+    main {
+        display: grid;
+        gap: 30px;
+        padding: 9px;
+    }
+    
+    main > div{
+        text-align: center;
+        background: radial-gradient(white, #999);
+        border: black solid 2px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    
