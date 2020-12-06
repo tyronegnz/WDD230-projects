@@ -1,5 +1,5 @@
 /* Media Query for large views */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 70.5em) {
     .navigation {
         display: flex;
     }
@@ -60,6 +60,10 @@
         text-align: center;
         opacity: 0.9;
         margin: 40px;
+    }
+
+    .h2-5day {
+        margin-top: 100px;
     }
 
     .article {

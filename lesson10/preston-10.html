@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 Weather Site</title>
+    <meta name="description" content="Weather Site WDD 230: Web Fronted Development">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="/lesson5/css/small.css">
+    <link type="text/css" rel="stylesheet" href="/lesson5/css/large.css">
+    <link rel="icon" href="/lesson5/images/favicon.ico">
+    <script src="/lesson6/js/windchill.js"></script>
+    <script src="/lesson6/js/date.js"></script>
+</head>
+
+<body>
+    <div class="top-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
+    <header>
+        <img class="icon" src="/lesson5/images/weatherIcon.png">
+        <h1>Worldwide Weather</h1>
+        <!--<h3>Accurate weather 24/7</h3>-->
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="main-div">
+            <picture>
+                <source srcset="/lesson5/images/weather_medium.jpg" media="(min-width: 32.5em)">
+                <source srcset="/lesson5/images/weather_large.jpg" media="(min-width: 70.5em)">
+                <img class="main-image" src="/lesson5/images/weather_small.jpg" alt="City Image">
+            </picture>
+            <section class="weather-summary">
+                <h2>Weather Summary</h2>
+                <hr>
+                Currently: <span id="currentCond"></span>
+                <br>
+                <br>
+                Temperature: <span id="currentTemp"></span>&deg;F
+                <br>
+                <br>
+                High: <span id="highTemp"></span>&deg;F
+                <br>
+                <br>
+                Low: <span id="lowTemp"></span>&deg;F
+                <br>
+                <br>
+                Wind Chill: <span id="wind-chill"></span>17&deg;F
+                <br>
+                <br>
+                Humidity: <span id="humidity"></span>&deg;%
+                <br>
+                <br>
+                Wind Speed: <span id="windSpeed"></span> MPH
+
+                <!--<div class="content-box">Weather Summary</div>
+        <div class="content-box">5 Day Forecast</div>
+        <div class="content-box">Article</div>
+        <div class="content-box">Contact Information</div>-->
+            </section>
+        </div>
+        <div class="five-day-div">
+            <h2 class="h2-5day">5 Day Forecast</h2>
+            <section class="five-day-forecast">
+                <div class="day">
+                    <p class="weekday">Mon</p>
+                    <p class="temp">70&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Tues</p>
+                    <p class="temp">65&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Wed</p>
+                    <p class="temp">64&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Thurs</p>
+                    <p class="temp">58&deg;</p>
+                </div>
+                <div class="day">
+                    <p class="weekday">Fri</p>
+                    <p class="temp">45&deg;</p>
+                </div>
+            </section>
+        </div>
+
+        <h2>Article</h2>
+        <div class="article">
+            <img class="group-people" src="/lesson5/images/people.jpg" alt="Group of People">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam illo autem delectus officia nulla amet,
+                hic, aut at veritatis doloribus ipsa ab, dignissimos placeat fugit. Cupiditate delectus quo mollitia
+                labore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam illo autem delectus officia nulla
+                amet,
+                hic, aut at veritatis doloribus ipsa ab, dignissimos placeat fugit. Cupiditate delectus quo mollitia
+                labore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam illo autem delectus officia nulla
+                amet,
+                hic, aut at veritatis doloribus ipsa ab, dignissimos placeat fugit. Cupiditate delectus quo mollitia
+                labore!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, facilis blanditiis, aliquam
+                repellendus rerum, asperiores doloribus sit explicabo qui nihil iure. Temporibus explicabo beatae, quis
+                dolor blanditiis dolores. Autem, maxime.
+            </p>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="footer-image-div"><img class="map-image" src="/lesson5/images/mapImage.jpg"
+                alt="Image of location in a map"></div>
+        <section class="footer-social-media">
+            <a href="https://www.instagram.com/?hl=en">
+                <img src="/lesson5/images/ig.png" alt="Instagram Link"></a>
+            <a href="https://www.facebook.com/">
+                <img src="/lesson5/images/facebook.png" alt="Facebook Link"></a>
+
+            <p>✉ worldwideweather.com</p>
+            <p> ☎ 000.000.0000</p>
+            <p>&copy;| 2020 | Tyrone Gonzalez | Rexburg, ID |
+                <a href="https://www.byui.edu/online"> BYUI Learning</a></p>
+        </section>
+
+        <span id="output"></span>
+        <!--<script src="/lesson4/js/date.js"></script>-->
+        <script src="/lesson4/js/responsive-menu.js"></script>
+
+        <script src="/lesson1/js/fontLoader.js"></script>
+
+        <script src="/lesson10/weather-api.js"></script>
+    </footer>
+
+</body>
+
+</html>
