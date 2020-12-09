@@ -67,18 +67,26 @@
     }
 
     .article {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         border: solid 5px white;
         padding: 15px;
         box-shadow: 3px 3px 10px #88888879;
         max-width: 100%;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 115px;
+        margin-right: 115px;
         margin-bottom: 70px;
     }
 
+    .article-paragraph {
+        grid-column: 2 / 4;
+        align-self: center;
+    }
+
     .group-people {
-        width: 200px;
+        width: 300px;
         float: right;
+        grid-column: 1 / 2;
     }
 
 
