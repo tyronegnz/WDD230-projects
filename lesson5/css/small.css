@@ -170,6 +170,7 @@ footer {
 
 .map-image {
     max-width: 100%;
+    border: solid 1px white;
 }
 
 .footer-div {
