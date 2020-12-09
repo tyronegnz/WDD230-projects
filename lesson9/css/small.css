@@ -12,4 +12,14 @@
         padding: 10px;
     }
     
+    .event1, .event2, .event3 {
+        background: #E7A73A;
+    }
     
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: white;
+    }

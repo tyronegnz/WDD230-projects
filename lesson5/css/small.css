@@ -37,7 +37,6 @@ header {
 }
 
 p {
-    font-style: italic;
     font-family: var(--paragraph-font);
 }
 
