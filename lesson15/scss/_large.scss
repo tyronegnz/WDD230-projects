@@ -19,11 +19,11 @@
     .hero-wrapper {
         display: grid;
         grid-template-columns: (370px 1fr 1fr 1fr);
-        background-image: url(/lesson13/images/OaklandTemple.jpg);
+        background-image: url(/lesson15/images/flowers.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 640px;
+        height: 450px;
     }
     
     .navigation {
@@ -93,4 +93,20 @@
         grid-column: 2;
         grid-row: 1;
     }
+
+    form label.top,
+    form div {
+        text-align: center;
+    }
+
+    form label.top input,
+    form label.top select {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .action {
+        text-align: center;
+    }
+    
 }

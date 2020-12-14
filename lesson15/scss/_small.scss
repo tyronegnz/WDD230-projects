@@ -16,7 +16,7 @@ p {
 
 .hero-wrapper {
     display: block;
-    background-image: url(/lesson13/images/OaklandTemple.jpg);
+    background-image: url(/lesson15/images/flowers.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,6 +38,7 @@ ul {
 }
 
 .navigation a {
+    /*display: flex;*/
     display: block;
     text-align: center;
     text-decoration: none;
@@ -46,7 +47,7 @@ ul {
 
 .home-heading {
     color: $colorHeading;
-    font-size: 45px;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -71,14 +72,6 @@ nav {
     grid-template-columns: (1fr 2fr 2fr 1fr);
 }
 
-.home-headline {
-    grid-column: 2 / 4;
-    text-align: center;
-}
-
-.home-paragraph {
-    grid-column: 2 / 4;
-}
 
 .footer-wrapper {
     display: grid;
@@ -103,4 +96,71 @@ iframe {
 
 .responsive li {
     display: block;
+}
+
+form {
+    font-family: $fontText;
+}
+
+form fieldset {
+    margin: 2rem;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: grid;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #5FBD4C;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    
+}
+
+
+
+textarea {
+    display: block;
+    margin: auto;
+    margin-bottom: 32px;
+    
+}
+
+.action {
+    text-align: center;
 }

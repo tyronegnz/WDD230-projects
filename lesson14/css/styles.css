@@ -393,7 +393,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F5F9E9; }
+  background-color: #F5F9E9;
+  width: 100%; }
 
 .icon {
   width: 120px; }
@@ -404,7 +405,7 @@ p {
 
 .hero-wrapper {
   display: block;
-  background-image: url(/lesson13/images/OaklandTemple.jpg);
+  background-image: url(/lesson14/images/house.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -423,6 +424,7 @@ ul {
   display: none; }
 
 .navigation a {
+  /*display: flex;*/
   display: block;
   text-align: center;
   text-decoration: none;
@@ -450,13 +452,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr; }
 
-.home-headline {
-  grid-column: 2 / 4;
-  text-align: center; }
-
-.home-paragraph {
-  grid-column: 2 / 4; }
-
 .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -477,12 +472,82 @@ iframe {
 .responsive li {
   display: block; }
 
+form {
+  font-family: "Roboto", sans-serif; }
+
+form fieldset {
+  margin: 2rem;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: .5rem 2%; }
+
+form legend {
+  margin: 0 1rem;
+  padding: 0 .5rem; }
+
+form label.top,
+form div {
+  padding: 1rem;
+  font-size: .8rem; }
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 87%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555; }
+
+form input.submitBtn {
+  border: none;
+  background-color: #5FBD4C;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%; }
+
+textarea {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  margin-bottom: 20px; }
+
+.action {
+  text-align: center; }
+
+@media only screen and (min-width: 560px) and (min-width: 560px) {
+  body {
+    width: 100%; }
+
+  form label.top,
+  form div {
+    text-align: center; }
+
+  form label.top input,
+  form label.top select {
+    margin-left: auto;
+    margin-right: auto; }
+
+  .action {
+    text-align: center; } }
 @media only screen and (min-width: 1028px) and (min-width: 1028px) {
   body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F9E9; }
+    background-color: #F5F9E9;
+    width: 100%; }
 
   .icon {
     width: 190px;
@@ -495,11 +560,11 @@ iframe {
   .hero-wrapper {
     display: grid;
     grid-template-columns: 370px 1fr 1fr 1fr;
-    background-image: url(/lesson13/images/OaklandTemple.jpg);
+    background-image: url(/lesson14/images/house.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 640px; }
+    height: 450px; }
 
   .navigation {
     display: flex; }
@@ -555,4 +620,16 @@ iframe {
   .contact {
     justify-self: start;
     grid-column: 2;
-    grid-row: 1; } }
+    grid-row: 1; }
+
+  form label.top,
+  form div {
+    text-align: center; }
+
+  form label.top input,
+  form label.top select {
+    margin-left: auto;
+    margin-right: auto; }
+
+  .action {
+    text-align: center; } }
