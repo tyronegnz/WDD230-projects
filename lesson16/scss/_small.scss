@@ -1,4 +1,4 @@
-body{
+body {
     font-family: $fontText;
     margin: 0;
     padding: 0;
@@ -26,6 +26,7 @@ p {
 ul {
     padding: 0;
 }
+
 .navigation li:first-child {
     display: block;
 }
@@ -81,46 +82,71 @@ nav {
 }
 
 
-
 .box-wrapper {
     grid-row: 3;
     grid-column: 2 / 3;
     padding: 20px;
-    background-color:#D2C2B2;
-     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;    
+    background-color: #D2C2B2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .box-wrapper2 {
     grid-row: 7;
     grid-column: 2 / 3;
     padding: 20px;
-    background-color:#D2C2B2;
+    background-color: #D2C2B2;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
 }
 
 .box-wrapper3 {
     grid-row: 11;
     grid-column: 2 / 3;
     padding: 20px;
-    background-color:#D2C2B2;
+    background-color: #D2C2B2;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
 }
 
 .img1 {
     width: 90%;
     grid-column: 2 / 4;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
+    border-top-right-radius: 10px;
 }
 
 .img2 {
     width: 90%;
     grid-column: 2 / 4;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.five-day-forecast {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: $fontText;
+    justify-content: space-between;
+}
+
+.day {
+    background: #010101;
+    background: -webkit-linear-gradient(top right, #010101, #8B9193);
+    background: -moz-linear-gradient(top right, #010101, #8B9193);
+    background: linear-gradient(to bottom left, #010101, #8B9193);
+    border: outset 1px gray;
+    padding: 10px;
+    box-shadow: 3px 3px 10px #88888879;
+    width: 100%;
+    text-align: center;
+}
+
+.day:hover {
+    background: #010101;
+    background: -webkit-linear-gradient(top left, #010101, #8B9193);
+    background: -moz-linear-gradient(top left, #010101, #8B9193);
+    background: linear-gradient(to bottom right, #010101, #8B9193);
 }
 
 .map-link {
@@ -130,11 +156,14 @@ nav {
 h4 {
     margin-top: 5;
 }
-.column, .columns {
+
+.column,
+.columns {
     float: left;
     margin: 0 1% 40px;
     justify-self: end;
 }
+
 /*.home-headline2 {
     grid-column: 2 / 4;
     text-align: center;
@@ -146,7 +175,7 @@ h4 {
 
 .footer-wrapper {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     background-color: #D2C2B2;
     padding: 10px;
     justify-items: center;

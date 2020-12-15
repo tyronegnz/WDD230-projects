@@ -493,13 +493,37 @@ nav {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px; }
 
+.five-day-forecast {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between; }
+
+.day {
+  background: #010101;
+  background: -webkit-linear-gradient(top right, #010101, #8B9193);
+  background: -moz-linear-gradient(top right, #010101, #8B9193);
+  background: linear-gradient(to bottom left, #010101, #8B9193);
+  border: outset 1px gray;
+  padding: 10px;
+  box-shadow: 3px 3px 10px #88888879;
+  width: 100%;
+  text-align: center; }
+
+.day:hover {
+  background: #010101;
+  background: -webkit-linear-gradient(top left, #010101, #8B9193);
+  background: -moz-linear-gradient(top left, #010101, #8B9193);
+  background: linear-gradient(to bottom right, #010101, #8B9193); }
+
 .map-link {
   font-size: 11px; }
 
 h4 {
   margin-top: 5; }
 
-.column, .columns {
+.column,
+.columns {
   float: left;
   margin: 0 1% 40px;
   justify-self: end; }
