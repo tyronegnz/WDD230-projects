@@ -499,6 +499,9 @@ nav {
   font-family: "Roboto", sans-serif;
   justify-content: space-between; }
 
+.forecast-content {
+  text-align: center; }
+
 .day {
   background: #010101;
   background: -webkit-linear-gradient(top right, #010101, #8B9193);
@@ -507,8 +510,7 @@ nav {
   border: outset 1px gray;
   padding: 10px;
   box-shadow: 3px 3px 10px #88888879;
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
 
 .day:hover {
   background: #010101;
@@ -573,7 +575,11 @@ iframe {
     width: 90%; }
 
   .img2 {
-    width: 90%; } }
+    width: 90%; }
+
+  .day {
+    width: 50%;
+    margin: auto; } }
 @media only screen and (min-width: 1028px) and (min-width: 1028px) {
   body {
     font-family: "Roboto", sans-serif;

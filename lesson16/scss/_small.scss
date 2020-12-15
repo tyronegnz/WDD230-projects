@@ -130,6 +130,10 @@ nav {
     justify-content: space-between;
 }
 
+.forecast-content {
+    text-align: center;
+}
+
 .day {
     background: #010101;
     background: -webkit-linear-gradient(top right, #010101, #8B9193);
@@ -139,7 +143,6 @@ nav {
     padding: 10px;
     box-shadow: 3px 3px 10px #88888879;
     width: 100%;
-    text-align: center;
 }
 
 .day:hover {
