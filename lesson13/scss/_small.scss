@@ -68,16 +68,16 @@ nav {
 
 .main-wrapper {
     display: grid;
-    grid-template-columns: (1fr 2fr 2fr 1fr);
+    grid-template-columns: (1fr 9fr 1fr);
 }
 
 .home-headline {
-    grid-column: 2 / 4;
+    grid-column: 2;
     text-align: center;
 }
 
 .home-paragraph {
-    grid-column: 2 / 4;
+    grid-column: 2;
 }
 
 .footer-wrapper {

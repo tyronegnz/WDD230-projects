@@ -1,0 +1,106 @@
+@media only screen and (min-width: 1028px) {
+    body{
+        font-family: $fontText;
+        margin: 0;
+        padding: 0;
+        background-color: $colorHeading;
+    }
+    
+    .icon {
+        width: 190px;
+        grid-column: 5;
+    }
+    
+    p {
+        text-align: justify;
+        font-family: $fontText;
+    }
+    
+    .hero-wrapper {
+        display: grid;
+        grid-template-columns: (370px 1fr 1fr 1fr);
+        background-image: url(/lesson16/images/spiritual.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+    }
+    
+    .navigation {
+        display: flex;
+    }
+    
+    .navigation li {
+        list-style: none;
+        display: block;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    
+    .home-heading {
+        color: $colorHeading;
+        font-size: 90px;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        text-align: left;
+    }
+    
+    a {
+        font-size: 20px;
+        font-family: $fontText;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    a:hover {
+        color: #6E6E72;
+    }
+    
+    nav {
+        grid-column: 4 / 5;
+    }
+    
+    .main-wrapper {
+        display: grid;
+        grid-template-columns: (1fr 1fr 1fr 1fr);
+    }
+    
+    .home-headline {
+        grid-column: 2 / 4;
+        text-align: center;
+    }
+    
+    .home-paragraph {
+        grid-column: 2 / 4;
+    }
+    
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #D2C2B2;
+        padding: 10px;
+    }
+    
+    iframe {
+        justify-self: end;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    .contact {
+        justify-self: start;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .box-wrapper {
+        grid-row: 3;
+        grid-column: 2 / 4;   
+    }
+
+    .box-wrapper2 {
+        grid-row: 7;
+        grid-column: 2 / 4;
+    }
+}
