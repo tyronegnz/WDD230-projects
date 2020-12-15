@@ -474,7 +474,7 @@ nav {
   border-bottom-right-radius: 10px; }
 
 .box-wrapper3 {
-  grid-row: 10;
+  grid-row: 11;
   grid-column: 2 / 3;
   padding: 20px;
   background-color: #D2C2B2;
@@ -542,7 +542,7 @@ iframe {
     grid-column: 2 / 3; }
 
   .box-wrapper3 {
-    grid-row: 10;
+    grid-row: 11;
     grid-column: 2 / 3; }
 
   .img1 {
@@ -639,7 +639,7 @@ iframe {
     grid-column: 2 / 4; }
 
   .box-wrapper3 {
-    grid-row: 10;
+    grid-row: 11;
     grid-column: 2 / 4; }
 
   .img1 {
