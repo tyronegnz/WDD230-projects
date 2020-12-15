@@ -80,12 +80,15 @@ nav {
     grid-column: 2;
 }
 
+
+
 .box-wrapper {
     grid-row: 3;
     grid-column: 2 / 3;
     padding: 20px;
     background-color:#D2C2B2;
-    border-radius: 15px;     
+     border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;    
 }
 
 .box-wrapper2 {
@@ -93,7 +96,31 @@ nav {
     grid-column: 2 / 3;
     padding: 20px;
     background-color:#D2C2B2;
-    border-radius: 15px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.box-wrapper3 {
+    grid-row: 10;
+    grid-column: 2 / 3;
+    padding: 20px;
+    background-color:#D2C2B2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.img1 {
+    width: 90%;
+    grid-column: 2 / 4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.img2 {
+    width: 90%;
+    grid-column: 2 / 4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
 }
 
 .map-link {

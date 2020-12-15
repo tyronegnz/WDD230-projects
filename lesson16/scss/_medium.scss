@@ -1,11 +1,24 @@
 @media only screen and (min-width: 560px) {
     .box-wrapper {
         grid-row: 3;
-        grid-column: 2 / 4;    
+        grid-column: 2 / 3;    
     }
 
     .box-wrapper2 {
         grid-row: 7;
-        grid-column: 2 / 4;
+        grid-column: 2 / 3;
+    }
+
+    .box-wrapper3 {
+        grid-row: 10;
+        grid-column: 2 / 3;
+    }
+
+    .img1 {
+        width: 90%;
+    }
+
+    .img2 {
+        width: 90%;
     }
 }
