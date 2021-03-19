@@ -1,0 +1,117 @@
+@keyframes fadeAnimation {
+  0% {
+    transform: rotate(0) translateY(-15%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes background-animation {
+
+  0%,
+  100% {
+    background-image: url(/pictures/portrait4.JPG);
+  }
+
+  50% {
+    background-image: url(/pictures/portrait5.JPG);
+  }
+
+  75% {
+    background-image: url(/pictures/portrait2.JPG);
+  }
+}
+
+@keyframes background-animation-2 {
+
+  0%,
+  100% {
+    background-image: url(/pictures/landscape6.JPG);
+  }
+
+  50% {
+    background-image: url(/pictures/landscape7.JPG);
+  }
+
+  75% {
+    background-image: url(/pictures/landscape1.JPG);
+  }
+}

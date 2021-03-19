@@ -1,0 +1,514 @@
+//IMPORTS
+@use 'keyframes';
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+$font: 'Quicksand',
+serif;
+$font2: 'Great Vibes',
+cursive;
+
+
+
+//COLORS
+$cardsColor: #8d99ae;
+$textColor: #FFFFFF;
+$backgroundTextColor: #fec5bb;
+$altColor: #8d99ae;
+
+
+//MIXIN
+@mixin gridContent($width, $height) {
+  background: rgba(141, 153, 174, 0.50);
+  box-shadow: 0 8px 32px 0 rgba(31, 90, 130, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(20.0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: $width;
+  height: $height;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  color: $textColor;
+  background-color: $backgroundTextColor;
+}
+
+main {
+  background-image: url(/pictures/flowersOptimizedPortrait.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-wrapper {
+  font-family: $font2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 62px);
+  grid-template-areas:
+    'title title title'
+    'subtext subtext subtext';
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  animation: background-animation 16s ease-in-out -3s infinite;
+}
+
+.sub-text {
+  font-size: 20px;
+  grid-area: subtext;
+  justify-self: center;
+  animation: fadeInUpBig 3s forwards 0s ease;
+}
+
+.logo {
+  font-size: 45px;
+  border-radius: 100px;
+  grid-area: title;
+  justify-self: center;
+  animation: fadeIn 3s forwards 0s ease;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    'main1'
+    'main2'
+    'main3';
+  padding: 50px 0px 50px 0px;
+  grid-gap: 50px;
+
+  h1 {
+    background-color: $cardsColor;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: $font2;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    padding: 50px;
+  }
+
+
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+h1+p {
+  font-family: $font;
+}
+
+.main-content-1 {
+  @include gridContent($width: 80%, $height: 600px);
+
+  ul {
+    font-size: 20px;
+    font-family: $font;
+    text-align: left;
+    padding: 50px;
+  }
+
+  li {
+    padding: 5px;
+  }
+
+  grid-area: main1;
+}
+
+.main-content-2 {
+  @include gridContent($width: 80%, $height: 600px);
+
+  grid-area: main2;
+}
+
+.main-content-3 {
+  @include gridContent($width: 80%, $height: 600px);
+
+  grid-area: main3;
+
+  p {
+    text-align: left;
+  }
+}
+
+.text-wrapper-1 {
+
+  .animation-h1 {
+    font-family: $font;
+    font-style: italic;
+    text-align: center;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    animation: fadeInUpBig 3s forwards 0s ease;
+  }
+
+  .animation-p {
+    font-size: 20px;
+    font-family: $font;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+    grid-column: -4 / -1;
+    width: 80%;
+    animation: fadeInUpBig 3s forwards 0s ease;
+  }
+
+  box-sizing: border-box;
+  padding: 50px 0px;
+  background-color: $backgroundTextColor;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: $backgroundTextColor;
+  padding: 50px 0px;
+
+  .footer-info {
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: $font;
+    text-align: left;
+    justify-self: center;
+  }
+}
+
+iframe {
+  margin: 0 auto;
+  border-radius: 10px;
+  justify-self: center;
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//FORM STYLES
+.login-box {
+  font-family: $font;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 0px 50px;
+  transform: translate(-50%, -50%);
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: $textColor;
+  font-size: 12px;
+}
+
+.login-box form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: $altColor;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box button:hover {
+  background: $cardsColor;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px $cardsColor,
+    0 0 25px $cardsColor,
+    0 0 50px $cardsColor,
+    0 0 100px $cardsColor;
+}
+
+.login-box button span {
+  position: absolute;
+  display: block;
+}
+
+.login-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $textColor);
+  animation: btn-anim1 1s linear infinite;
+}
+
+
+.login-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, $textColor);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, $textColor);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+
+.login-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, $textColor);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+textarea {
+  border-radius: 5px;
+  resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MEDIA QUERIE MEDIUM
+@media only screen and (min-width: 540px) {
+  main {
+    background-image: url(/pictures/flowersOptimizedLandscape.jpg);
+  }
+
+  .hero-wrapper {
+    animation: background-animation-2 16s ease-in-out infinite;
+  }
+
+  .main-content-1 {
+    @include gridContent($width: 55%, $height: 500px);
+    
+    grid-area: main1;
+  }
+
+  .main-content-2 {
+    @include gridContent($width: 55%, $height: 500px);
+
+    grid-area: main2;
+  }
+
+  .main-content-3 {
+    @include gridContent($width: 55%, $height: 500px);
+
+    grid-area: main3;
+  }
+
+  iframe {
+    width: 55%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MEDIA QUERIE LARGE
+@media only screen and (min-width: 1028px) {
+  .hero-wrapper {
+    grid-template-rows: repeat(2, 69px);
+    height: 450px;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'main1 main2 main3';
+    padding: 50px 0px 50px 0px;
+    grid-gap: 0px;
+
+    ul {
+      padding: 50px;
+    }
+  }
+
+  .login-box {
+    top: 60%;
+  }
+
+  .main-content-1 {
+    @include gridContent($width: 80%, $height: 500px);
+
+    grid-area: main1;
+  }
+
+  .main-content-2 {
+    @include gridContent($width: 80%, $height: 500px);
+
+    grid-area: main2;
+  }
+
+  .main-content-3 {
+    @include gridContent($width: 80%, $height: 500px);
+
+    grid-area: main3;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'map info .';
+    background-color: $backgroundTextColor;
+    padding: 50px 0px 50px 0px;
+
+    .footer-info {
+      font-size: 20px;
+      font-family: $font;
+      text-align: left;
+      justify-self: center;
+    }
+  }
+
+  iframe {
+    grid-area: map;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    width: 80%;
+  }
+}
